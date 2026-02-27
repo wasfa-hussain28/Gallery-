@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery</title>
+    <style>
+                  body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            
+            grid-auto-rows: 200px; 
+            
+            grid-auto-flow: dense; 
+            
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.02);
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+ 
+        .wide {
+            grid-column: span 2;
+        }
+
+        .tall {
+            grid-row: span 2;
+        }
+
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+  
+
+    <h1>Products Collection</h1>
+
+    <div class="gallery">
+        <div class="item"><img src="LASHES.JPG" alt="Photo"></div>
+        
+        <div class="item tall"><img src="BLUSH.JPG" alt="Photo"></div>
+        
+        <div class="item"><img src="MASCARA.JPG" alt="Photo"></div>
+        <div class="item"><img src="FOUNDATION.jpg" alt="Photo"></div>
+        
+        <div class="item wide"><img src="corrector.JPG" alt="Photo"></div>
+        
+        <div class="item"><img src="SHADES.jpg" alt="Photo"></div>
+        <div class="item"><img src="LIPSTICK.jpg" alt="Photo"></div>
+        
+        <div class="item big"><img src="Nail paint.JPG" alt="Photo"></div>
+        <div class="item "><img src="TONER.JPG" alt="Photo"></div>
+        
+        <div class="item "><img src="GLOSS.JPG" alt="Photo"></div>
+        
+        <div class="item "><img src="GLITTERS.JPG" alt="Photo"></div>
+        
+         <div class="item"><img src="1.jpg" alt="Photo"></div>
+        <div class="item"><img src="2.jpg" alt="Photo"></div>
+        
+        <div class="item big"><img src="4.jpg" alt="Photo"></div>
+        <div class="item "><img src="3.jpg" alt="Photo"></div>
+        
+        <div class="item "><img src="7.jpg" alt="Photo"></div>
+        
+        <div class="item "><img src="6.jpg" alt="Photo"></div>
+        
+     
+    </div>
+
+</body>
+</html>
+    </body>
